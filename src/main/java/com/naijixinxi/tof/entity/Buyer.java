@@ -1,21 +1,40 @@
 package com.naijixinxi.tof.entity;
 
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.util.Date;
 
+@Table(name = "buyer")
+@Entity
 public class Buyer {
+    @Id
     int bid;
+    @Column
     String buyerName;
+    @Column
     String wid;
+    @Column
     String password;
+    @Column
     int gender;
+    @Column
     String phone;
+    @Column
     String email;
+    @Column
     String avatar;
+    @Column
     int isDelete;
+    @Column
     String createdUser;
+    @Column
     Date createdTime;
+    @Column
     String modifiedUser;
+    @Column
     Date modifiedTime;
 
     public int getBid() {
